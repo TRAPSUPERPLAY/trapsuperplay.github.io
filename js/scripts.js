@@ -1,8 +1,7 @@
-const icons = document.querySelectorAll('.icon');
-icons.forEach (icon => {  
-  icon.addEventListener('click', (event) => {
-    icon.classList.toggle("open");
-  });
-});
+let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.menu');
 
-
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+})
