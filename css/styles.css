@@ -1,5 +1,58 @@
+*,*::before,*:after{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.html,body{
+  height: 100%;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.wrapper{
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.container{
+  max-width: 1250px;
+  margin: 10px auto;
+  padding: 0px 10px;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b7;
+}
+
+.header__body {
+  position: relative;
+  justify-content: space-between;
+  height: 110px;
+  align-items: center;
+}
+
+
+
+
 .logo-center {
-    text-align: center;
+  text-align: center;
+  margin: -5px;
 }
 
 h1 {
@@ -14,7 +67,7 @@ h1 {
   .menu-btn {
     width: 35px;
     height: 30px;
-    margin: 10px 10px;
+    margin: 30px 114px;
     position: absolute;
     top:7%;
     left:93%;
@@ -63,7 +116,7 @@ h1 {
       height: 100%;
       padding: 15px;
       background-color: rgba(43, 43, 43, 0.671);
-      transform: translateX(100%);
+      transform: translateX(-100%);
       transition: transform 0.5s; 
   }
   
@@ -87,4 +140,27 @@ h1 {
   .menu-btn.active span:nth-of-type(3) {
     transform: rotate(-45deg);
     top: 13px;
+  }
+
+  .videocontainer {
+    text-align: center;
+    padding: 130px 0px 0px 0px;
+  }
+
+  .textplayer {
+    color: #fff;
+    font-size: 30px;
+  }
+  .player {
+  margin: 200px;
+  }
+
+  .textplaylist {
+    color: #fff;
+    font-size: 35px;
+  }
+
+  .spotify {
+    padding: 0px 200px 0px 900px;
+    margin-top: -48%;
   }
