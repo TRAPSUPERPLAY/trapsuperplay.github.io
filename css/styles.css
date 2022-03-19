@@ -47,7 +47,85 @@
   align-items: center;
 }
 
-
+@media (max-width:1440px){
+  .container{
+    max-width: 1100px;
+  }
+  .spotify{
+    max-width: 2000px;
+    margin: -15px;
+  }
+}
+@media (max-width:1291px){
+  .container{
+    max-width: 1000px;
+  }
+}
+@media (max-width:1190px){
+  .container{
+    max-width: 900px;
+  }
+}
+@media (max-width:1110px){
+  .container{
+    max-width: 800px;
+  }
+}
+@media (max-width:1014px){
+  .container{
+    max-width: 700px;
+  }
+}
+@media (max-width:933px){
+  .container{
+    max-width: 600px;
+  }
+}
+@media (max-width:848px){
+  .container{
+    max-width: 510px;
+  }
+}
+@media (max-width:767px){
+  //*.container{
+    max-width: 510px;
+  }*//
+}
+@media (max-width:755px){
+  .container{
+    max-width: 400px;
+  }
+}
+@media (max-width:680px){
+  .container{
+    max-width: 320px;
+  }
+}
+@media (max-width:599px){
+  .container{
+    max-width: 270px;
+  }
+}
+@media (max-width:543px){
+  .container{
+    max-width: 240px;
+  }
+}
+@media (max-width:458px){
+  .container{
+    max-width: 210px;
+  }
+}
+@media (max-width:436px){
+  .container{
+    max-width: 190px;
+  }
+}
+@media (max-width:378px){
+  .container{
+    max-width: 170px;
+  }
+}
 
 
 .logo-center {
@@ -115,6 +193,7 @@ h1 {
       width: 100%;
       height: 100%;
       padding: 15px;
+      overflow: auto;
       background-color: rgba(43, 43, 43, 0.671);
       transform: translateX(-100%);
       transition: transform 0.5s; 
@@ -163,4 +242,78 @@ h1 {
   .spotify {
     padding: 0px 200px 0px 900px;
     margin-top: -48%;
+    margin: 20px;
+    width: 1000px;
+    height: auto;
   }
+
+  .logo_patch {
+    text-align: center;
+  }
+
+  .socialblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;
+    background: var(--bg);
+  }
+  ul
+{
+    position: relative;
+    display: flex;
+    gap: 5px;
+}
+ul li
+{
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+ul li:hover
+{
+    z-index: 10000;
+    transform: scale(0.75);
+}
+ul li::before
+{
+    content: '';
+    position: absolute;
+    inset: 30px;
+    box-shadow: 0 0 0 10px var(--clr),
+    0 0 0 20px var(--bg),
+    0 0 0 22px var(--clr);
+    transition: 0.5s;
+}
+ul li:hover:before
+{
+    inset: 0px;
+}
+ul li::after
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--bg);
+    transform: rotate(45deg);
+}
+ul li a
+{
+    position: relative;
+    text-decoration: none;
+    color: var(--clr);
+    z-index: 10;
+    font-size: 2em;
+    transition: 0.5s;
+}
+ul li:hover a
+{
+    font-size: 3em;
+    filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
