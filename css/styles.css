@@ -7,7 +7,7 @@
 .html,body{
   height: 100%;
   font-family: 'Bebas Neue', cursive;
-  background-color: black;
+  background: #000;
 }
 
 .wrapper{
@@ -58,6 +58,12 @@
   .socialblock{
     max-width: none;
   }
+  .menu nav h2{
+    font-size: 5em;
+  }
+  .menu nav p{
+    font-size: 3em;
+  }
 }
 @media (max-width:1291px){
   .container{
@@ -69,6 +75,12 @@
   .socialblock{
     max-width: none;
   }
+  .menu nav h2{
+    font-size: 5em;
+  }
+  .menu nav p{
+    font-size: 3em;
+  }
 }
 @media (max-width:1190px){
   .container{
@@ -79,6 +91,12 @@
   }
   .socialblock{
     max-width: none;
+  }
+  .menu nav h2{
+    font-size: 4em;
+  }
+  .menu nav p{
+    font-size: 2em;
   }
 }
 @media (max-width:1110px){
@@ -113,6 +131,12 @@
   .socialblock{
     max-width: none;
   }
+  .menu nav h2{
+    font-size: 3em;
+  }
+  .menu nav p{
+    font-size: 2em;
+  }
 }
 @media (max-width:848px){
   .container{
@@ -124,6 +148,12 @@
   .socialblock{
     max-width: none;
   }
+  .menu nav h2{
+    font-size: 3em;
+  }
+  .menu nav p{
+    font-size: 1.8em;
+  }
 }
 @media (max-width:767px){
   .container{
@@ -134,6 +164,12 @@
   }
   .socialblock{
     max-width: none;
+  }
+  .menu nav h2{
+    font-size: 3em;
+  }
+  .menu nav p{
+    font-size: 1.6em;
   }
 }
 @media (max-width:755px){
@@ -147,6 +183,12 @@
 @media (max-width:680px){
   .container{
     max-width: 320px;
+  }
+  .menu nav h2{
+    font-size: 2.5em;
+  }
+  .menu nav p{
+    font-size: 1.3em;
   }
 }
 @media (max-width:599px){
@@ -182,6 +224,12 @@
     font-size: 25px;
     width: 590px;
     height: 0px;
+  }
+  .menu nav h2{
+    font-size: 2.2em;
+  }
+  .menu nav p{
+    font-size: 1.2em;
   }
 }
 @media (max-width:458px){
@@ -262,7 +310,7 @@ h1 {
     font-family: 'Bebas Neue', cursive;
     color: rgb(255, 255, 255);
 }
-h2 {
+.menu h2 {
   font-size: 5em;
   margin: 0;
   padding: 0;
