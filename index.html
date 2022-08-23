@@ -18,84 +18,121 @@
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-        <meta name="image" content="//trapsuperplay.github.io/img/favicon.ico">
         <link rel="manifest" href="img/manifest.json">
-        <link rel="shortcut icon" href="img/favicon.ico">
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1131093589390960"
+     crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/styles.css">
+        <style>
+          .form__button {
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 60px;
+        background-color: #0042FF;
+        color: #fff;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 20px;
+        box-shadow: 0 5px 0 #00103D;
+        transition: background-color 0.5s ease 0s;
+        position: relative;
+        top: 0;
+          margin: 50px 10px;
+      }
+      .form__button:hover{
+        background-color: #0030B9;
+      }
+      .form__button:active{
+        top: 3px;
+        box-shadow: 0 2px 0 #001D6F;
+      }
+      </style>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1131093589390960"
-     crossorigin="anonymous"></script>
-        
     </head>
     <body>
-      <div class="wrapper">
-        <div class="header">
-          <div class="container">
-            <div class="header__body">
-              <div class="logo-center">
-                <a href="https://trapsuperplay.github.io"><img src="img/cover.png" class="logo-center" alt="Home" width="100"></a>
-                  <header class="burger">
-                    <div class="menu-btn">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </header>
-              </div>
-          </div>
-        </div>
-            <div class="menu">
-              <nav>
-                <h2>Contact to the author</h2>
-                <p>Email - originaltrapsuperplay@gmail.com</p>
-               <li><a href="#"></a></li>
-               <li><a href="#"></a></li>
-               <li><a href="#"></a></li>
-               <li><a href="#"></a></li>
-              </nav>
+        <nav class="flex-div">
+            <div class="nav-left flex-div">
+                <img src="/img/cover.png" class="logo" onclick="locate_assign()">
             </div>
-        </div>
-      </div>
-      <div class="videocontainer">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lVLYwH7vPhg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="logo_patch">
-        <img src="img/cover.png" class="logo-center" alt="logo_patch" width="200">
-          <img src="https://superplaycounts.github.io/img/icon-sites.png" class="logo-center" alt="logo_patch" width="200">
-      </div>
-      <div class="socialblock">
-        <ul>
-          <li style="--clr:#ff0000;">
-              <a href="https://www.youtube.com/channel/UC2SBni9JvrLBDeEiVvJm41Q"><i class="fa-brands fa-youtube"></i></a>
-          </li>
-          <li style="--clr:rgb(7, 196, 1);">
-              <a href="https://open.spotify.com/artist/5FTZRmsajeNsxLF7yeJAme"><i class="fa-brands fa-spotify"></i></a>
-          </li>
-          <li style="--clr:rgb(196, 112, 1);">
-              <a href="https://soundcloud.com/trapsuperplay"><i class="fa-brands fa-soundcloud"></i></a>
-          </li>
-          <li style="--clr: rgb(252, 60, 68);">
-              <a href="https://music.apple.com/ua/artist/trap-super-play/1551609742"><i class="fa-brands fa-apple"></i></a>
-          </li>
-          <li style="--clr:#1877f2;">
-              <a href="https://www.facebook.com/trapsuperplay"><i class="fa-brands fa-facebook-f"></i></a>
-          </li>
-          <li style="--clr:#c32aa3;">
-              <a href="https://www.instagram.com/trapsuperplay/"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-          <li style="--clr:#2536d3;">
-              <a href="https://discord.gg/Dvhm44cfUE"><i class="fa-brands fa-discord"></i></a>
-          </li>
-        </ul>
-      </div>
-      <h1 class="copyright">© 2022 TRAPSUPERPLAY.GITHUB.IO . ALL RIGHTS RESERVED.</h1>
-          <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-          <script src="js/scripts.js"></script>
+            <div class="header__burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="header__menu">
+              <ul class="header__list">
+                  <li>
+                      <a href="mailto: originaltrapsuperplay@gmail.com" class="header__link">Email</a>
+                  </li>
+                  <li>
+                      <a href="https://linktr.ee/trapsuperplay" class="header__link">Music</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="main__content">
+            <div class="main__container">
+              <div class="main__menu">
+                <iframe src="https://www.youtube.com/embed/lVLYwH7vPhg?controls=0" frameborder="0" style="border-radius:12px"></iframe>
+              </div>
+              <hr>
+              <div id="grid">
+                <div class="grid-item">
+                  <h2>SPOTIFY</h2>
+                  <div class="items__links">
+                    <iframe src="https://open.spotify.com/embed/playlist/0seBqmwl3f6O2bqYyEJ52V?utm_source=generator" frameborder="0" style="border-radius:12px" width="280" height="380"></iframe>
+                  </div>
+                </div>
+                <div class="grid-item">
+                    <h2>SOUNDCLOUD</h2>
+                    <div class="items__links">
+                      <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1242535174&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" frameborder="0" style="border-radius:12px" width="280" height="380"></iframe>
+                    </div>
+                  </div>
+              </div>
+              <center>
+                <button type="submit" onclick="contanting()" class="form__button">Contact</button>
+              </center>
+              <img src="/img/cover.png" class="logo" id="Homes" onclick="locate_assign()">
+              <div class="socialblock">
+                <ul>
+                  <li style="--clr:#ff0000;">
+                      <a href="https://www.youtube.com/channel/UC2SBni9JvrLBDeEiVvJm41Q"><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                  <li style="--clr:rgb(7, 196, 1);">
+                      <a href="https://open.spotify.com/artist/5FTZRmsajeNsxLF7yeJAme"><i class="fa-brands fa-spotify"></i></a>
+                  </li>
+                  <li style="--clr:rgb(196, 112, 1);">
+                      <a href="https://soundcloud.com/trapsuperplay"><i class="fa-brands fa-soundcloud"></i></a>
+                  </li>
+                  <li style="--clr: rgb(252, 60, 68);">
+                      <a href="https://music.apple.com/ua/artist/trap-super-play/1551609742"><i class="fa-brands fa-apple"></i></a>
+                  </li>
+                  <li style="--clr:#1877f2;">
+                      <a href="https://www.facebook.com/trapsuperplay"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li style="--clr:#c32aa3;">
+                      <a href="https://www.instagram.com/trapsuperplay"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li style="--clr:#2536d3;">
+                      <a href="https://discord.gg/Dvhm44cfUE"><i class="fa-brands fa-discord"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <h2 style="font-size: 3vw;">© 2022 TRAPSUPERPLAY.GITHUB.IO . ALL RIGHTS RESERVED.</h2>
+            </div>
+          </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
