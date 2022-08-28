@@ -8,3 +8,6 @@ function locate_assign() {
 		header__burger.classList.toggle('active');
 		header__menu.classList.toggle('active');
 	})
+function sends() {
+	alert("But before you send, you need to pass the captcha.");
+}
