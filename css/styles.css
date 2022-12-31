@@ -60,7 +60,7 @@ nav
 }
 .header__link:hover
 {
-  color: #00C91B;
+  color: #00b8c9;
 }
 .main__content
 {
@@ -198,6 +198,16 @@ ul li:hover a
 {
   transition: .4s;
 }
+#textvalid{
+  display: block;
+  color: #999;
+  font-weight: 500;
+  padding: 5px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75em;
+}
+
 @media (max-width:767px){
   .header__burger {
       display: block;
