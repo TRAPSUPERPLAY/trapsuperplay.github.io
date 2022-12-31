@@ -22,7 +22,7 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1131093589390960"
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1131093589390960"
      crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/styles.css">
@@ -120,7 +120,58 @@ textarea.form__input {
 	top: 3px;
 	box-shadow: 0 2px 0 #161b13;
 }
+a img{
+  width: 25%;
+  display: -ms-grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 16px;
+  grid-row-gap: 30px;
+  margin-top: 15px;
+  gap: 50px;
+}
+.buttonteam {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #003ca3), color-stop(1, #065cc4));
+	background:-moz-linear-gradient(top, #003ca3 5%, #065cc4 100%);
+	background:-webkit-linear-gradient(top, #003ca3 5%, #065cc4 100%);
+	background:-o-linear-gradient(top, #003ca3 5%, #065cc4 100%);
+	background:-ms-linear-gradient(top, #003ca3 5%, #065cc4 100%);
+	background:linear-gradient(to bottom, #003ca3 5%, #065cc4 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#003ca3', endColorstr='#065cc4',GradientType=0);
+	background-color:#003ca3;
+	-webkit-border-radius:42px;
+	-moz-border-radius:42px;
+	border-radius:42px;
+	border:4px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:16px;
+	padding:19px 19px;
+	text-decoration:none;
+	text-shadow:1px 2px 0px #0033b3;
+}
+.buttonteam:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #065cc4), color-stop(1, #003ca3));
+	background:-moz-linear-gradient(top, #065cc4 5%, #003ca3 100%);
+	background:-webkit-linear-gradient(top, #065cc4 5%, #003ca3 100%);
+	background:-o-linear-gradient(top, #065cc4 5%, #003ca3 100%);
+	background:-ms-linear-gradient(top, #065cc4 5%, #003ca3 100%);
+	background:linear-gradient(to bottom, #065cc4 5%, #003ca3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#065cc4', endColorstr='#003ca3',GradientType=0);
+	background-color:#065cc4;
+}
+.buttonteam:active {
+	position:relative;
+	top:1px;
+}
+
       </style>
+      <script type="module" data-skip-moving="true">
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+        </script>
       <meta name="purpleads-verification" content="401a27e6000387f7a9a63616"/>
       <script async src="https://arc.io/widget.min.js#E74srjho"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -145,7 +196,7 @@ textarea.form__input {
                   <li>
                       <a href="mailto: originaltrapsuperplay@gmail.com" class="header__link">Email</a>
                   </li>
-		   <li>
+                  <li>
                       <a href="https://trapsuperplay.creator-spring.com/" class="header__link">Merch</a>
                   </li>
                   <li>
@@ -157,7 +208,7 @@ textarea.form__input {
           <div class="main__content">
             <div class="main__container">
               <div class="main__menu">
-                <iframe src="" frameborder="0" style="border-radius:12px"></iframe>
+                <iframe src="https://www.youtube.com/embed/P6Y3R5VY3Rs?controls=0" frameborder="0" style="border-radius:12px"></iframe>
               </div>
               <hr>
               <div id="grid">
@@ -174,6 +225,11 @@ textarea.form__input {
                     </div>
                   </div>
               </div>
+              <center>
+                <div class="adblock">
+                  <img src="img/adblock.gif" alt="adblock" style="cursor: pointer; position: relative; width: 40vw; border-radius: 10%; margin: 50px auto;" onclick="adclick()">
+                </div>
+              </center>
               <center id="Contact">
                 <div class="wrapper">
                   <div class="form">
@@ -181,14 +237,15 @@ textarea.form__input {
               <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
               onload="if(submitted) {window.location='';}"></iframe>
               <form action="https://formspree.io/f/xvoygkka" method="POST">
-                      <h1 class="form_title">Contact</h1>
+                      <h1 class="form_title" style="cursor: pointer;" onclick="contactshow()">Contact</h1>
                       <div class="form__item">
                         <label for="formName" class="form__label">Full Name*:</label>
                         <input id="formName" type="text" name="entry.295451526" class="form__input _req">
                       </div>
                       <div class="form__item">
                         <label for="formEmail" class="form__label">Email*:</label>
-                        <input id="formEmail" type="text" name="entry.129501452" class="form__input _req _email">
+                        <input id="formEmail" type="text" name="entry.129501452" class="form__input _req _email" onkeyup="validate()">
+                        <span id="textvalid"></span>
                       </div>
                       <div class="form__item">
                         <label for="formMessage" class="form__label">Message:</label>
@@ -198,6 +255,10 @@ textarea.form__input {
                     </form>
                   </div>
                 </div>
+                <br>
+                <br>
+                <br>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfm2FSjkAWgyCeX8GplJHHHR9yotrn6QJnFZaRRBvD9RrEu7w/viewform" class="buttonteam">Join TRAP SUPER PLAY TEAM</a>
               </center>
               <img src="/img/cover.png" class="logo" id="Homes">
               <div class="socialblock">
@@ -225,10 +286,10 @@ textarea.form__input {
                   </li>
                 </ul>
               </div>
-              <h2 style="font-size: 3vw;">© 2022 TRAPSUPERPLAY.GITHUB.IO . ALL RIGHTS RESERVED.</h2>
+              <h2 style="font-size: 3vw;">© 2023 TRAPSUPERPLAY.GITHUB.IO . ALL RIGHTS RESERVED.</h2>
             </div>
           </div>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
         <script src="js/scripts.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-P7TZ01JD30"></script>
         <script>
@@ -238,5 +299,7 @@ textarea.form__input {
 
           gtag('config', 'G-P7TZ01JD30');
         </script>
+        <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+        <script src="pwabuilder-sw-register.js"></script>
     </body>
 </html>
