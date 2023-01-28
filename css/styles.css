@@ -60,7 +60,7 @@ nav
 }
 .header__link:hover
 {
-  color: #00b8c9;
+  color: #002b76;
 }
 .main__content
 {
@@ -207,6 +207,11 @@ ul li:hover a
   letter-spacing: 0.1em;
   font-size: 0.75em;
 }
+
+
+
+
+
 
 @media (max-width:767px){
   .header__burger {
