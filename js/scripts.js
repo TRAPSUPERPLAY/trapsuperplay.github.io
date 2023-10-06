@@ -1,5 +1,7 @@
+var currentYearSpan = document.getElementById("currentYear");
+
 function locate_assign() {
-	document.location.assign("https://trapsuperplay.github.io/");
+	document.location.assign("/");
 	}
 	let header__burger = document.querySelector('.header__burger');
 	let header__menu = document.querySelector('.header__menu');
@@ -32,3 +34,7 @@ function validate(){
 		textvalid.style.color = "#f44336";
 	}
 }
+
+
+var currentYear = new Date().getFullYear();
+currentYearSpan.textContent = currentYear;
