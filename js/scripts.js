@@ -17,6 +17,39 @@ function adclick() {
 	document.location.assign("https://trapsuperplay.creator-spring.com/")
 }
 
+
+function toggleDiv() {
+    var div = document.getElementById("toggleDiv");
+    var body = document.getElementsByTagName("body")[0];
+
+    var isDivVisible = localStorage.getItem('isDivVisible');
+
+    if (isDivVisible === 'true') {
+        div.style.display = "none";
+        body.classList.remove("no-scroll");
+        localStorage.setItem('isDivVisible', 'false');
+    } else {
+        div.style.display = "block";
+        body.classList.add("no-scroll");
+        localStorage.setItem('isDivVisible', 'true');
+    }
+}
+
+window.onload = function() {
+    var div = document.getElementById("toggleDiv");
+    var isDivVisible = localStorage.getItem('isDivVisible');
+
+    if (isDivVisible === 'true') {
+        div.style.display = "block";
+        body.classList.add("no-scroll");
+    } else {
+        div.style.display = "none";
+        body.classList.remove("no-scroll");
+    }
+};
+
+
+
 function validate(){
 	let form = document.getElementById('form');
 	let formEmail = document.getElementById('formEmail').value;
