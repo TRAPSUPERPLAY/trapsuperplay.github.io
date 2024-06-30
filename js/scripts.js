@@ -17,7 +17,6 @@ function adclick() {
 	document.location.assign("https://trapsuperplay.creator-spring.com/")
 }
 
-
 function toggleDiv() {
     var div = document.getElementById("toggleDiv");
     var body = document.getElementsByTagName("body")[0];
