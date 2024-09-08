@@ -275,37 +275,41 @@ a img{
               </center>
               <center id="Contact">
                 <div class="wrapper">
-                  <script type="text/javascript">var submitted=false;</script>
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-                    onload="if(submitted) {window.location='';}"></iframe>
+                  <script type="text/javascript">var submitted = false;</script>
+                  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                      onload="if(submitted) {window.location='';}"></iframe>
                   <div class="form">
-                    <form id="contact-form" action="https://formspree.io/f/xvoygkka" method="POST">
-                        <h1 class="form_title" style="cursor: pointer;" onclick="contactshow()">Contact</h1>
-            
-                        <div class="form__item">
-                            <label for="formName" class="form__label">Full Name*:</label>
-                            <input id="formName" type="text" name="entry.295451526" class="form__input _req">
-                            <span id="nameValid"></span>
-                        </div>
-            
-                        <div class="form__item">
-                            <label for="formEmail" class="form__label">Email*:</label>
-                            <input id="formEmail" type="text" name="entry.129501452" class="form__input _req _email" onkeyup="validateEmail()">
-                            <span id="emailValid"></span>
-                        </div>
-            
-                        <div class="form__item">
-                            <label for="formMessage" class="form__label">Message:</label>
-                            <textarea name="entry.1710927477" id="formMessage" class="form__input"></textarea>
-                            <span id="messageValid"></span>
-                        </div>
-            
-                        <div class="g-recaptcha" data-sitekey="6LceaDoqAAAAAAGrZGDgFbebS47L_2AjBEZ1KiC3"></div>
-            
-                        <button type="submit" class="form__button" onclick="validateForm(event)">Send</button>
-                    </form>
-                </div>
-                </div>
+                      <form id="contact-form" action="https://formspree.io/f/xvoygkka" method="POST" target="hidden_iframe">
+                          <h1 class="form_title" style="cursor: pointer;" onclick="contactshow()">Contact</h1>
+              
+                          <div class="form__item">
+                              <label for="formName" class="form__label">Full Name*:</label>
+                              <input id="formName" type="text" name="entry.295451526" class="form__input _req">
+                              <span id="nameValid"></span>
+                          </div>
+              
+                          <div class="form__item">
+                              <label for="formEmail" class="form__label">Email*:</label>
+                              <input id="formEmail" type="text" name="entry.129501452" class="form__input _req _email" onkeyup="validateEmail()">
+                              <span id="emailValid"></span>
+                          </div>
+              
+                          <div class="form__item">
+                              <label for="formMessage" class="form__label">Message:</label>
+                              <textarea name="entry.1710927477" id="formMessage" class="form__input"></textarea>
+                              <span id="messageValid"></span>
+                          </div>
+              
+                          <!-- Скрытое поле для reCAPTCHA токена -->
+                          <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+              
+                          <!-- reCAPTCHA -->
+                          <div class="g-recaptcha" data-sitekey="6LceaDoqAAAAAAGrZGDgFbebS47L_2AjBEZ1KiC3"></div>
+              
+                          <button type="submit" class="form__button" onclick="validateForm(event)">Send</button>
+                      </form>
+                  </div>
+              </div>
                 <br>
                 <br>
                 <br>

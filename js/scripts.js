@@ -102,7 +102,9 @@ function validateForm(event) {
 		grecaptcha.ready(function () {
 			grecaptcha.execute('6LceaDoqAAAAAAGrZGDgFbebS47L_2AjBEZ1KiC3', { action: 'submit' }).then(function (token) {
 				if (token) {
-					alert("Captcha passed. Sending the form...");
+					// Устанавливаем токен в скрытое поле
+					document.getElementById('g-recaptcha-response').value = token;
+					submitted = true; // Отметка для скрытого iframe
 					document.getElementById('contact-form').submit();
 				} else {
 					alert("Captcha failed. Please try again.");
