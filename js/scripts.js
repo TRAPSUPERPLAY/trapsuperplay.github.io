@@ -10,8 +10,18 @@ function locate_assign() {
 		header__burger.classList.toggle('active');
 		header__menu.classList.toggle('active');
 	})
-function sends() {
-	alert("But before you send, you need to pass the captcha.");
+function sends(event) {
+		event.preventDefault();
+		
+		grecaptcha.enterprise.ready(function() {
+			grecaptcha.enterprise.execute('6LermDkqAAAAAM4eo5m47j_0tn4O-cAaJ8_82YzX', {action: 'submit'}).then(function(token) {
+				document.getElementById('g-recaptcha-response').value = token;
+
+				alert("Captcha passed. Sending the form...");
+
+				document.getElementById('contact-form').submit();
+			});
+		});
 }
 function adclick() {
 	document.location.assign("https://trapsuperplay.creator-spring.com/")
