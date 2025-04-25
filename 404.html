@@ -9,13 +9,13 @@
         <meta name="author" content="DimonAles">
         <meta property="og:title" content="TRAP SUPER PLAY  | 404">
         <meta property="og:description" content="music artist, world of music, The best tracks and sounds in the TRAP style.">
-        <meta property="og:image" content="img/prewiew.jpg">
+        <meta property="og:image" content="img/preview.jpg">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://trapsuperplay.github.io">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="TRAP SUPER PLAY | 404">
         <meta name="twitter:description" content="music artist, world of music, The best tracks and sounds in the TRAP style.">
-        <meta name="twitter:image" content="img/prewiew.jpg">
+        <meta name="twitter:image" content="img/preview.jpg">
         <meta name="theme-color" content="#000000">
         <title>TRAP SUPER PLAY | 404</title>
         <link rel="icon" type="image/png" sizes="192x192"  href="icon.png">
@@ -27,25 +27,135 @@
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1131093589390960"
    crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="css/styles.css">
+        <style>
+          :root {
+              --primary-color: #6a0dad;
+              --primary-color-alt: #8a2be2;
+              --background-color: #121212;
+              --surface-color: #1e1e1e;
+              --text-color: #e0e0e0;
+              --text-color-light: #a0a0a0;
+              --white-color: #fff;
+              --body-font: 'Poppins', sans-serif;
+              --heading-font: 'Bebas Neue', cursive;
+          }
+  
+          *, *::before, *::after {
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+          }
+  
+          html {
+              height: 100%;
+          }
+  
+          body {
+              background-color: var(--background-color);
+              color: var(--text-color);
+              font-family: var(--body-font);
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              min-height: 100vh;
+              padding: 20px;
+              text-align: center;
+              overflow: hidden;
+          }
+          .error-container {
+              max-width: 600px;
+              width: 100%;
+          }
+  
+          .error-logo img {
+              max-width: 100px;
+              margin-bottom: 30px;
+              opacity: 0.8;
+              transition: opacity 0.3s ease;
+          }
+          .error-logo:hover img {
+               opacity: 1;
+          }
+  
+  
+          .error-code {
+              font-family: var(--heading-font);
+              font-size: clamp(6rem, 25vw, 14rem);
+              line-height: 1;
+              color: var(--primary-color);
+              margin-bottom: 15px;
+              text-shadow: 0 0 15px rgba(106, 13, 173, 0.5);
+          }
+  
+          .error-message {
+              font-family: var(--heading-font);
+              font-size: clamp(1.5rem, 5vw, 2.5rem);
+              color: var(--white-color);
+              margin-bottom: 15px;
+              letter-spacing: 1px;
+          }
+  
+          .error-description {
+              font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+              color: var(--text-color-light);
+              margin-bottom: 40px;
+              line-height: 1.6;
+          }
+  
+          .button {
+              display: inline-block;
+              background-color: var(--primary-color);
+              color: var(--white-color);
+              padding: 1rem 1.75rem;
+              border-radius: 5px;
+              font-family: var(--heading-font);
+              font-size: 1.1rem;
+              letter-spacing: 1px;
+              font-weight: 600;
+              border: none;
+              cursor: pointer;
+              transition: background-color 0.3s ease, transform 0.2s ease;
+              text-decoration: none;
+          }
+  
+          .button:hover {
+              background-color: var(--primary-color-alt);
+              transform: translateY(-3px);
+              box-shadow: 0 5px 15px rgba(106, 13, 173, 0.3);
+          }
+  
+          .button:active {
+              transform: translateY(0);
+              box-shadow: none;
+          }
+
+          .button i {
+              margin-right: 8px;
+          }
+  
+      </style>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     </head>
     <body>
-      <div class="wrapper">
-        <div class="header">
-          <div class="container">
-            <div class="header__body">
-              <div class="logo-center">
-                <a href="/"><img src="img/white-logo.png" class="logo-center" alt="Home" width="100"></a>
-              </div>
-          </div>
-        </div>
-        </div>
-      </div>
-      <p id="ops_class" style="font-size: 5vw; margin: 0; padding: 0; text-align: center; font-family: 'Bebas Neue', cursive; position: absolute; top: 40%; left: 50%; transform: translateX(-50%) translateY(-50%); color: rgb(255, 255, 255);">Oops!, sorry, the page is not available at the moment:(</p>
-          <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-          <script src="js/scripts.js"></script>
-    </body>
+      <div class="error-container">
+        <a href="/" class="error-logo" aria-label="Go to Homepage">
+            <img src="/img/white-logo.png" alt="TRAP SUPER PLAY Logo">
+        </a>
+
+        <h1 class="error-code">404</h1>
+
+        <p class="error-message">Page Not Found</p>
+        <p class="error-description">
+            Sorry, the page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+        </p>
+
+        <a href="/" class="button">
+            <i class="fas fa-home"></i>
+            Go Back Home
+        </a>
+    </div>
+</body>
 </html>

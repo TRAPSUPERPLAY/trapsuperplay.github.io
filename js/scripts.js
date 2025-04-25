@@ -1,72 +1,109 @@
-var currentYearSpan = document.getElementById("currentYear");
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close');
 
-function locate_assign() {
-	document.location.assign("/");
-	}
-	let header__burger = document.querySelector('.header__burger');
-	let header__menu = document.querySelector('.header__menu');
-	
-	header__burger.addEventListener('click', function(){
-		header__burger.classList.toggle('active');
-		header__menu.classList.toggle('active');
-	})
-function sends() {
-	alert("But before you send, you need to pass the captcha.");
-}
-function adclick() {
-	document.location.assign("https://trapsuperplay.creator-spring.com/")
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu');
+        document.body.classList.add('no-scroll');
+    });
 }
 
-function toggleDiv() {
-    var div = document.getElementById("toggleDiv");
-    var body = document.getElementsByTagName("body")[0];
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu');
+        if (!document.getElementById('merch-modal').classList.contains('show-modal')) {
+            document.body.classList.remove('no-scroll');
+        }
+    });
+}
 
-    var isDivVisible = localStorage.getItem('isDivVisible');
+const navLinks = document.querySelectorAll('.nav__link');
 
-    if (isDivVisible === 'true') {
-        div.style.display = "none";
-        body.classList.remove("no-scroll");
-        localStorage.setItem('isDivVisible', 'false');
+function linkAction() {
+    navMenu.classList.remove('show-menu');
+    if (!document.getElementById('merch-modal').classList.contains('show-modal')) {
+        document.body.classList.remove('no-scroll');
+    }
+}
+navLinks.forEach(n => n.addEventListener('click', linkAction));
+
+const emailInput = document.getElementById('formEmail');
+const emailValidationMessage = document.getElementById('email-validation-message');
+
+function validateEmail() {
+    const email = emailInput.value;
+    const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if (email === "") {
+        emailValidationMessage.textContent = "";
+        emailValidationMessage.className = 'form__validation';
+    } else if (email.match(pattern)) {
+        emailValidationMessage.textContent = "Email format is valid!";
+        emailValidationMessage.className = 'form__validation valid';
     } else {
-        div.style.display = "block";
-        body.classList.add("no-scroll");
-        localStorage.setItem('isDivVisible', 'true');
+        emailValidationMessage.textContent = "Please enter a valid email address.";
+        emailValidationMessage.className = 'form__validation invalid';
     }
 }
 
-window.onload = function() {
-    var div = document.getElementById("toggleDiv");
-    var isDivVisible = localStorage.getItem('isDivVisible');
-
-    if (isDivVisible === 'true') {
-        div.style.display = "block";
-        body.classList.add("no-scroll");
-    } else {
-        div.style.display = "none";
-        body.classList.remove("no-scroll");
-    }
-};
-
-
-
-function validate(){
-	let form = document.getElementById('form');
-	let formEmail = document.getElementById('formEmail').value;
-	let textvalid = document.getElementById('textvalid');
-	let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-
-	if(formEmail.match(pattern))
-	{
-		textvalid.innerHTML = "Your Email Address is Valid!";
-		textvalid.style.color = "#4caf50";
-	}
-	else
-	{
-		textvalid.innerHTML = "Please Enter Valid Email Address.";
-		textvalid.style.color = "#f44336";
-	}
+if(emailInput) {
+    emailInput.addEventListener('keyup', validateEmail);
 }
 
+const modal = document.getElementById('merch-modal');
+const merchLink = document.getElementById('merch-link');
+const modalClose = document.getElementById('modal-close');
 
-var currentYear = new Date().getFullYear();
-currentYearSpan.textContent = currentYear;
+function showModal() {
+    if(modal) {
+        modal.classList.add('show-modal');
+        document.body.classList.add('no-scroll');
+    }
+}
+
+function closeModal() {
+    if(modal) {
+        modal.classList.remove('show-modal');
+        if (!navMenu.classList.contains('show-menu')) {
+            document.body.classList.remove('no-scroll');
+        }
+    }
+}
+
+if (merchLink) {
+    merchLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        showModal();
+    });
+}
+
+if (modalClose) {
+    modalClose.addEventListener('click', closeModal);
+}
+
+window.addEventListener('click', (event) => {
+    if (event.target == modal) {
+        closeModal();
+    }
+});
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && modal.classList.contains('show-modal')) {
+        closeModal();
+    }
+});
+
+const currentYearSpan = document.getElementById("currentYear");
+if (currentYearSpan) {
+    currentYearSpan.textContent = new Date().getFullYear();
+}
+
+const adImage = document.getElementById('ad-image');
+if (adImage) {
+    adImage.addEventListener('click', () => {
+        window.open('https://trapsuperplay.creator-spring.com/', '_blank');
+    });
+}
+
+console.log("TRAP SUPER PLAY Website Loaded");

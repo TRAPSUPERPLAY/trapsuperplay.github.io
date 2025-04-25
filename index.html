@@ -1,369 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="description" content="TRAP SUPER PLAY - music artist, world of music.">
-        <meta name="keywords" content="TRAP, music, SUPER PLAY, tracks, sounds, exclusive, no copyright music, TRAP SUPER PLAY">
-        <meta name="author" content="DimonAles">
-        <meta property="og:title" content="TRAP SUPER PLAY">
-        <meta property="og:description" content="music artist, world of music, The best tracks and sounds in the TRAP style.">
-        <meta property="og:image" content="img/prewiew.jpg">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://trapsuperplay.github.io">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="TRAP SUPER PLAY">
-        <meta name="twitter:description" content="music artist, world of music, The best tracks and sounds in the TRAP style.">
-        <meta name="twitter:image" content="img/prewiew.jpg">
-        <meta name="theme-color" content="#000000">
-        <title>TRAP SUPER PLAY</title>
-        <link rel="icon" type="image/png" sizes="192x192"  href="icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="icon.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
-        <link rel="manifest" href="img/manifest.json">
-        <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1131093589390960"
-     crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="css/styles.css">
-        <style>
-.form {
-	max-width: 550px;
-	margin: 14px 23px;
-	color: #fff;
-	padding: 30px 0;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-.form *{
-	outline: none;
-}
+    <title>TRAP SUPER PLAY - Official Website</title>
+    <meta name="description" content="TRAP SUPER PLAY - Official website of the music artist. Explore tracks, sounds, merch, and more in the world of TRAP music.">
+    <meta name="keywords" content="TRAP, music, SUPER PLAY, tracks, sounds, exclusive, no copyright music, TRAP SUPER PLAY, artist, producer">
+    <meta name="author" content="DimonAles">
 
-.form__body {
-	position: relative;
-}
-.form__body::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(51, 51, 51, 0.9) url("loading.gif") center / 50px no-repeat;
-	opacity: 0;
-	visibility: hidden;
-	transition: all 0.5s ease 0s;
-}
-.form__body._sending::after {
-	opacity: 1;
-	visibility: visible;
-}
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://trapsuperplay.github.io">
+    <meta property="og:title" content="TRAP SUPER PLAY - Official Website">
+    <meta property="og:description" content="Explore the world of TRAP SUPER PLAY. Listen to the latest tracks, check out exclusive merch, and get in touch.">
+    <meta property="og:image" content="img/preview.jpg">
 
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://trapsuperplay.github.io">
+    <meta property="twitter:title" content="TRAP SUPER PLAY - Official Website">
+    <meta property="twitter:description" content="Explore the world of TRAP SUPER PLAY. Listen to the latest tracks, check out exclusive merch, and get in touch.">
+    <meta property="twitter:image" content="img/preview.jpg">
 
-.form_title {
-	font-size: 40px;
-	font-weight: 700;
-	margin: 0px 0px 30px 0px;
-}
-.form__item {
-	margin: 0px 0px 20px 0px;
-}
-.form__label {
-	font-size: 18px;
-	display: block;
-	margin: 0px 0px 10px 0px;
-}
-.form__input {
-	height: 50px;
-	padding: 0px 20px;
-	border-radius: 5px;
-	width: 100%;
-	font-size: 18px;
-	transition: all 0.5s ease 0s;
-}
+    <link rel="icon" type="image/png" sizes="192x192" href="icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#1a1a1a">
 
-.form__input:focus{
-	box-shadow: 0 0 15px #acacac;
-}
-.form__input._error {
-	box-shadow: 0 0 15px red;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1131093589390960" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="nav__logo">
+                <img src="/img/white-logo.png" alt="TRAP SUPER PLAY Logo" class="nav__logo-img">
+            </a>
 
-textarea.form__input {
-	min-height: 120px;
-	resize: vertical;
-	padding: 20px;
-}
-
-.form__button {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 60px;
-	background-color: #a9a9a9;
-	color: #fff;
-	font-size: 18px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: 700;
-	cursor: pointer;
-	border-radius: 20px;
-	box-shadow: 0 5px 0 #14131b;
-	transition: background-color 0.5s ease 0s;
-	position: relative;
-	top: 0;
-}
-.form__button:hover{
-	background-color: #444444;
-}
-.form__button:active{
-	top: 3px;
-	box-shadow: 0 2px 0 #161b13;
-}
-a img{
-  width: 25%;
-  display: -ms-grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-column-gap: 16px;
-  grid-row-gap: 30px;
-  margin-top: 15px;
-  gap: 50px;
-}
-.buttonteam {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #003ca3), color-stop(1, #065cc4));
-	background:-moz-linear-gradient(top, #003ca3 5%, #065cc4 100%);
-	background:-webkit-linear-gradient(top, #003ca3 5%, #065cc4 100%);
-	background:-o-linear-gradient(top, #003ca3 5%, #065cc4 100%);
-	background:-ms-linear-gradient(top, #003ca3 5%, #065cc4 100%);
-	background:linear-gradient(to bottom, #003ca3 5%, #065cc4 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#003ca3', endColorstr='#065cc4',GradientType=0);
-	background-color:#003ca3;
-	-webkit-border-radius:42px;
-	-moz-border-radius:42px;
-	border-radius:42px;
-	border:4px solid #4e6096;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Impact;
-	font-size:16px;
-	padding:19px 19px;
-	text-decoration:none;
-	text-shadow:1px 2px 0px #0033b3;
-}
-.buttonteam:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #065cc4), color-stop(1, #003ca3));
-	background:-moz-linear-gradient(top, #065cc4 5%, #003ca3 100%);
-	background:-webkit-linear-gradient(top, #065cc4 5%, #003ca3 100%);
-	background:-o-linear-gradient(top, #065cc4 5%, #003ca3 100%);
-	background:-ms-linear-gradient(top, #065cc4 5%, #003ca3 100%);
-	background:linear-gradient(to bottom, #065cc4 5%, #003ca3 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#065cc4', endColorstr='#003ca3',GradientType=0);
-	background-color:#065cc4;
-}
-.buttonteam:active {
-	position:relative;
-	top:1px;
-}
-
-.hiddenDiv {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-    z-index: 9999;
-    text-align: center;
-    backdrop-filter: blur(7px);
-}
-.closeButton {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: #fff;
-    font-size: 51px;
-    cursor: pointer;
-}
-
-.siteButton {
-    margin-top: 10px;
-    padding: 15px 30px;
-    background-color: rgb(81, 71, 148);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.siteButton:hover {
-    background-color: #4260aa;
-}
-
-      </style>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="flex-div">
-            <div class="nav-left flex-div">
-                <img src="/img/white-logo.png" class="logo" onclick="locate_assign()">
-            </div>
-            <div class="header__burger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="header__menu">
-              <ul class="header__list">
-                <li>
-                  <a href="#Contact" class="header__link">Contact</a>
-              </li>
-                  <li>
-                    <a href="mailto: originaltrapsuperplay@gmail.com" class="header__link">Email</a>
-                  </li>
-                  <li>
-                    <a class="header__link" onclick="toggleDiv()">Merch</a>
-                  </li>
-                  <li>
-                    <a href="https://linktr.ee/trapsuperplay" class="header__link">Music</a>
-                  </li>
-              </ul>
-            </div>
-          </nav>
-          <div class="main__content">
-            <div class="main__container">
-              <div class="main__menu">
-                <iframe src="https://www.youtube.com/embed/9jGlsNC1hVc?controls=0" frameborder="0" style="border-radius:12px"></iframe>
-              </div>
-              <hr>
-              <div id="grid">
-                <div class="grid-item">
-                  <h2>SPOTIFY</h2>
-                  <div class="items__links">
-                    <iframe src="https://open.spotify.com/embed/playlist/0seBqmwl3f6O2bqYyEJ52V?utm_source=generator" frameborder="0" style="border-radius:12px" width="280" height="380"></iframe>
-                  </div>
-                </div>
-                <div class="grid-item">
-                    <h2>SOUNDCLOUD</h2>
-                    <div class="items__links">
-		      <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2061415232&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" frameborder="0" style="border-radius: 12px;" width="280" height="380"></iframe>
-                    </div>
-                  </div>
-              </div>
-              <div class="slider" style="display: none;">
-                <div class="slider-merch">
-                  <div class="item">
-                    <img src="img/merch/1.png">
-                  </div>
-                  <div class="item">
-                    <img src="img/merch/2.png">
-                  </div>
-                  <div class="item">
-                    <img src="img/merch/3.png">
-                  </div>
-                  <div class="item">
-                    <img src="img/merch/4.png">
-                  </div>
-                  <button id="next">></button>
-                  <button id="prev"><</button>
-                </div>
-              </div>
-              <center>
-                <div class="adblock">
-                  <img src="img/adblock.gif" alt="adblock" style="cursor: pointer; position: relative; width: 40vw; border-radius: 10%; margin: 50px auto; display: none;" onclick="adclick()">
-                </div>
-              </center>
-              <center id="Contact">
-                <div class="wrapper">
-                  <div class="form">
-                    <script type="text/javascript">var submitted=false;</script>
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-                    onload="if(submitted) {window.location='';}"></iframe>
-                    <form action="https://formspree.io/f/xvoygkka" method="POST">
-                      <h1 class="form_title" style="cursor: pointer;" onclick="contactshow()">Contact</h1>
-                      <div class="form__item">
-                        <label for="formName" class="form__label">Full Name*:</label>
-                        <input id="formName" type="text" name="entry.295451526" class="form__input _req">
-                      </div>
-                      <div class="form__item">
-                        <label for="formEmail" class="form__label">Email*:</label>
-                        <input id="formEmail" type="text" name="entry.129501452" class="form__input _req _email" onkeyup="validate()">
-                        <span id="textvalid"></span>
-                      </div>
-                      <div class="form__item">
-                        <label for="formMessage" class="form__label">Message:</label>
-                        <textarea name="entry.1710927477" id="formMessage" class="form__input"></textarea>
-                      </div>
-                      <button type="submit" class="form__button" onclick="sends()">Send</button>
-                    </form>
-                  </div>
-                </div>
-                <br>
-                <br>
-                <br>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfm2FSjkAWgyCeX8GplJHHHR9yotrn6QJnFZaRRBvD9RrEu7w/viewform" class="buttonteam">Join TRAP SUPER PLAY TEAM</a>
-              </center>
-              <br>
-              <br>
-              <br>
-              <img src="/img/white-logo.png" class="logo" draggable="false" id="Homes">
-              <div class="socialblock">
-                <ul>
-                  <li style="--clr:#ff0000;">
-                      <a href="https://www.youtube.com/channel/UC2SBni9JvrLBDeEiVvJm41Q"><i class="fa-brands fa-youtube"></i></a>
-                  </li>
-                  <li style="--clr:rgb(7, 196, 1);">
-                      <a href="https://open.spotify.com/artist/5FTZRmsajeNsxLF7yeJAme"><i class="fa-brands fa-spotify"></i></a>
-                  </li>
-                  <li style="--clr:rgb(255, 145, 0);">
-                      <a href="https://soundcloud.com/trapsuperplay"><i class="fa-brands fa-soundcloud"></i></a>
-                  </li>
-                  <li style="--clr: rgb(252, 60, 68);">
-                      <a href="https://music.apple.com/ua/artist/trap-super-play/1551609742"><i class="fa-brands fa-apple"></i></a>
-                  </li>
-                  <li style="--clr: rgb(255, 255, 255);">
-                    <a href="https://x.com/trapsuperplay"><i class="fa-brands fa-x-twitter"></i></a>
-                  </li>
-                  <li style="--clr:#006eff;">
-                      <a href="https://www.facebook.com/trapsuperplay"><i class="fa-brands fa-facebook-f"></i></a>
-                  </li>
-                  <li style="--clr:#ff00c8;">
-                      <a href="https://www.instagram.com/trapsuperplay"><i class="fa-brands fa-instagram"></i></a>
-                  </li>
-                  <li style="--clr: rgb(255, 255, 255);">
-                    <a href="https://www.threads.net/@trapsuperplay"><i class="fa-brands fa-threads"></i></a>
-                  </li>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#music" class="nav__link">Music</a></li>
+                    <li class="nav__item"><a href="#contact"class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="mailto:originaltrapsuperplay@gmail.com" class="nav__link">Email</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link" id="merch-link">Merch</a></li>
+                    <li class="nav__item"><a href="https://linktr.ee/trapsuperplay" target="_blank" rel="noopener noreferrer" class="nav__link external__link">All Music <i class="fas fa-external-link-alt"></i></a></li>
                 </ul>
-              </div>
-              <h2 style="font-size: 3vw;">© <span id="currentYear">2022</span> TRAPSUPERPLAY.GITHUB.IO . ALL RIGHTS RESERVED.</h2>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
             </div>
-          </div>
-          <div id="toggleDiv" class="hiddenDiv">
-            <span onclick="toggleDiv()" class="closeButton">&times;</span>
-            <p>All merch store</p>
-            <button onclick="window.location.href='https://trapsuperplay.customprint.market/en'" class="siteButton">Merch Ukraine 1</button>
-            <button onclick="window.location.href='https://trapsuperplay.fatline.biz/'" class="siteButton">Merch Ukraine 2</button>
-            <button onclick="window.location.href='https://trapsuperplay.creator-spring.com/'" class="siteButton">Merch all countries</button>
-          </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-        <script src="js/scripts.js"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-P7TZ01JD30"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
 
-          gtag('config', 'G-P7TZ01JD30');
-        </script>
-        <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
-    </body>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero section container">
+            <h1 class="hero__title">TRAP SUPER PLAY</h1>
+            <p class="hero__subtitle">World of Music / Music Artist</p>
+            <div class="hero__video">
+                <iframe src="https://www.youtube.com/embed/9jGlsNC1hVc?controls=1&modestbranding=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Featured Video"></iframe>
+            </div>
+        </section>
+        <section class="music section container" id="music">
+            <h2 class="section__title">Listen Now</h2>
+            <div class="music__grid">
+                <div class="music__item">
+                    <h3 class="music__platform-title">SPOTIFY</h3>
+                    <div class="music__embed">
+                        <iframe src="https://open.spotify.com/embed/playlist/0seBqmwl3f6O2bqYyEJ52V?utm_source=generator&theme=0" width="100%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Spotify Playlist"></iframe>
+                    </div>
+                </div>
+                <div class="music__item">
+                    <h3 class="music__platform-title">SOUNDCLOUD</h3>
+                    <div class="music__embed">
+                        <iframe width="100%" height="380" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2061415232&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" title="SoundCloud Track"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ad-section section container">
+            <div class="adblock" style="display: none;">
+                <img src="img/adblock.gif" alt="Advertisement" style="cursor: pointer; max-width: 100%; height: auto; border-radius: 10px; margin: 20px auto; display: block;" id="ad-image">
+            </div>
+        </section>
+        <section class="contact section container" id="contact">
+            <h2 class="section__title">Get In Touch</h2>
+            <div class="contact__wrapper">
+                <form class="contact__form" action="https://formspree.io/f/xvoygkka" method="POST" id="contact-form">
+                    <div class="form__group">
+                        <label for="formName" class="form__label">Full Name*:</label>
+                        <input id="formName" type="text" name="name" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="formEmail" class="form__label">Email*:</label>
+                        <input id="formEmail" type="email" name="email" class="form__input" required onkeyup="validateEmail()">
+                        <span id="email-validation-message" class="form__validation"></span>
+                    </div>
+                    <div class="form__group">
+                        <label for="formMessage" class="form__label">Message:</label>
+                        <textarea name="message" id="formMessage" class="form__input form__textarea"></textarea>
+                    </div>
+                    <button type="submit" class="button form__button">Send Message</button>
+                </form>
+                <p class="contact__join-text">Want to collaborate or join the team?</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfm2FSjkAWgyCeX8GplJHHHR9yotrn6QJnFZaRRBvD9RrEu7w/viewform" target="_blank" rel="noopener noreferrer" class="button button--secondary">Join TRAP SUPER PLAY TEAM</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section">
+        <div class="footer__container container">
+            <div class="footer__logo">
+                <img src="/img/white-logo.png" alt="TRAP SUPER PLAY Logo" class="footer__logo-img">
+            </div>
+            <div class="footer__social">
+                <a href="https://www.youtube.com/channel/UC2SBni9JvrLBDeEiVvJm41Q" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="footer__social-link youtube"><i class="fab fa-youtube"></i></a>
+                <a href="https://open.spotify.com/artist/5FTZRmsajeNsxLF7yeJAme" target="_blank" rel="noopener noreferrer" aria-label="Spotify" class="footer__social-link spotify"><i class="fab fa-spotify"></i></a>
+                <a href="https://soundcloud.com/trapsuperplay" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud" class="footer__social-link soundcloud"><i class="fab fa-soundcloud"></i></a>
+                <a href="https://music.apple.com/ua/artist/trap-super-play/1551609742" target="_blank" rel="noopener noreferrer" aria-label="Apple Music" class="footer__social-link apple"><i class="fab fa-apple"></i></a>
+                <a href="https://x.com/trapsuperplay" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link x-twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com/trapsuperplay" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/trapsuperplay" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.threads.net/@trapsuperplay" target="_blank" rel="noopener noreferrer" aria-label="Threads" class="footer__social-link threads"><i class="fa-brands fa-threads"></i></a>
+            </div>
+            <p class="footer__copy">© <span id="currentYear"></span> TRAPSUPERPLAY.GITHUB.IO. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <div id="merch-modal" class="modal">
+        <div class="modal__content">
+            <span id="modal-close" class="modal__close">×</span>
+            <h3 class="modal__title">Official Merch Stores</h3>
+            <p class="modal__description">Choose your region or preferred store:</p>
+            <div class="modal__buttons">
+                <button onclick="window.open('https://trapsuperplay.customprint.market/en', '_blank')" class="button modal__button">Merch Ukraine 1</button>
+                <button onclick="window.open('https://trapsuperplay.fatline.biz/', '_blank')" class="button modal__button">Merch Ukraine 2</button>
+                <button onclick="window.open('https://trapsuperplay.creator-spring.com/', '_blank')" class="button modal__button">Merch Worldwide</button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/scripts.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P7TZ01JD30"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P7TZ01JD30');
+    </script>
+</body>
 </html>
