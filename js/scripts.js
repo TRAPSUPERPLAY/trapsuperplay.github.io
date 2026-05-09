@@ -61,6 +61,80 @@ if(emailInput) {
     emailInput.addEventListener('keyup', validateEmail);
 }
 
+const contactForm = document.getElementById('contact-form');
+const formToast = document.getElementById('form-toast');
+let toastTimer;
+
+function showToast(message, type) {
+    if (!formToast) {
+        return;
+    }
+
+    formToast.textContent = message;
+    formToast.className = ['toast', 'show', type].filter(Boolean).join(' ');
+    formToast.setAttribute('role', type === 'error' ? 'alert' : 'status');
+
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+        formToast.classList.remove('show');
+    }, 5000);
+}
+
+async function submitContactForm(event) {
+    event.preventDefault();
+
+    if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
+    }
+
+    const submitButton = contactForm.querySelector('[type="submit"]');
+    const defaultButtonText = submitButton ? submitButton.textContent : '';
+
+    if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+    }
+
+    showToast('Sending message...');
+
+    try {
+        const response = await fetch(contactForm.action, {
+            method: contactForm.method,
+            body: new FormData(contactForm),
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (!response.ok) {
+            const data = await response.json().catch(() => null);
+            const errorMessage = data?.errors?.map(error => error.message).join(' ')
+                || data?.error
+                || 'Something went wrong. Please try again.';
+            throw new Error(errorMessage);
+        }
+
+        contactForm.reset();
+        if (emailValidationMessage) {
+            emailValidationMessage.textContent = '';
+            emailValidationMessage.className = 'form__validation';
+        }
+        showToast('Message sent successfully!', 'success');
+    } catch (error) {
+        showToast(error.message || 'Something went wrong. Please try again.', 'error');
+    } finally {
+        if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = defaultButtonText;
+        }
+    }
+}
+
+if (contactForm) {
+    contactForm.addEventListener('submit', submitContactForm);
+}
+
 const modal = document.getElementById('merch-modal');
 const merchLink = document.getElementById('merch-link');
 const modalClose = document.getElementById('modal-close');
@@ -116,4 +190,4 @@ if (adImage) {
     });
 }
 
-console.log("TRAP SUPER PLAY Website Loaded");
+// console.log("TRAP SUPER PLAY Website Loaded");
