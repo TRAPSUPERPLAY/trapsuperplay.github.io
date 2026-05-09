@@ -163,6 +163,12 @@ iframe {
   transform: translateY(0);
 }
 
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+  transform: none;
+}
+
 .button--secondary {
   background-color: transparent;
   border: 2px solid var(--primary-color);
@@ -568,6 +574,39 @@ iframe {
 .back-to-top:hover {
   background-color: var(--primary-color-alt);
   color: #fff;
+}
+
+.toast {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 5rem;
+  z-index: calc(var(--z-modal) + 1);
+  width: min(360px, calc(100% - 3rem));
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  background-color: var(--surface-color);
+  color: var(--white-color);
+  border-left: 4px solid var(--primary-color);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transform: translateY(1rem);
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.toast.success {
+  border-left-color: var(--success-color);
+}
+
+.toast.error {
+  border-left-color: var(--error-color);
 }
 
 @media screen and (max-width: 350px) {
